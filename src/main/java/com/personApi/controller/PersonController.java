@@ -32,13 +32,11 @@ public class PersonController {
 
             Person person = new Person();
             person.setName(request.getName());
-            person.setAge(request.getAge());
 
             Person savedPerson = personRepository.save(person);
             PersonResponse response = new PersonResponse();
             response.setId(savedPerson.getId());
             response.setName(savedPerson.getName());
-            response.setAge(savedPerson.getAge());
 
             return ResponseEntity.status(HttpStatus.CREATED).body(response);
         } catch (ValidationException e) {
@@ -56,7 +54,7 @@ public class PersonController {
                 PersonResponse response = new PersonResponse();
                 response.setId(person.get().getId());
                 response.setName(person.get().getName());
-                response.setAge(person.get().getAge());
+
 
                 return ResponseEntity.ok(response);
             } else {
@@ -79,7 +77,7 @@ public class PersonController {
                         PersonResponse response = new PersonResponse();
                         response.setId(person.getId());
                         response.setName(person.getName());
-                        response.setAge(person.getAge());
+
 
                         return response;
                     })
@@ -100,14 +98,14 @@ public class PersonController {
             if (existingPerson.isPresent()) {
                 Person personToUpdate = existingPerson.get();
                 personToUpdate.setName(request.getName());
-                personToUpdate.setAge(request.getAge());
+
 
                 Person updated = personRepository.save(personToUpdate);
 
                 PersonResponse response = new PersonResponse();
                 response.setId(updated.getId());
                 response.setName(updated.getName());
-                response.setAge(updated.getAge());
+
                 return ResponseEntity.ok(response);
             } else {
                 return ResponseEntity.notFound().build();
