@@ -67,7 +67,7 @@ Run the application using Maven:
 ```
 mvn spring-boot:run
 ```
-The application will start running on `http://localhost:8080`.
+The application will start running on `http://localhost:${SERVER_PORT}`.
 
 ## UML Diagrams
 * [UML Diagram](https://drive.google.com/file/d/1tJ1UUtCb9O2cGmNkxJj8hqnG9mKPjgdi/view?usp=drive_link)

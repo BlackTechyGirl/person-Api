@@ -124,7 +124,8 @@ public class PersonController {
 
             if (person.isPresent()) {
                 personRepository.deleteById(id);
-                return ResponseEntity.noContent().build();
+                return ResponseEntity.ok("Person with ID " + id + " has been successfully deleted.");
+
             } else {
                 return ResponseEntity.notFound().build();
             }

@@ -9,12 +9,12 @@ If you are using a local server, the base url will be `http://localhost:8080` (b
 Be sure to check the [README](readme.MD) on how to start the project.
 
 ## API Endpoints
-| Endpoint     | Functionality | Description | HTTP method |
-|--------------| --- | --- | --- |
-| `/api`       | Create | Create a new person | `POST` |
-| `/api/:name` | Read | Get a single person | `GET` |
-| `/api/:id`   | Update | Update a single person | `PUT` |
-| `/api/:id`   | Delete | Delete a single person | `DELETE` |
+| Endpoint   | Functionality | Description | HTTP method |
+|------------| --- | --- | --- |
+| `/api`     | Create | Create a new person | `POST` |
+| `/api/:id` | Read | Get a single person | `GET` |
+| `/api/:id` | Update | Update a single person | `PUT` |
+| `/api/:id` | Delete | Delete a single person | `DELETE` |
 
 ## Api Endpoints
 In this section, you'll find examples of how to interact with the API endpoints to perform various CRUD operations on person entities.
@@ -34,7 +34,7 @@ Example Response:
 ```
 
 * ### Retrieve a peron by name
-  To retrieve a person by name, send a `GET` request to the `/api` endpoint with the `name` in the url.
+  To retrieve a person by name, send a `GET` request to the `/api/:id` endpoint with the `name` in the url.
   Example Response:
 ```json
 {
@@ -44,7 +44,7 @@ Example Response:
 ```
 
 * ### Retrieve all persons
-  To retrieve all persons, send a `GET` request to the `/api/all` endpoint.
+  To retrieve all persons, send a `GET` request to the `/api` endpoint.
 
 Example Response:
 ```json
