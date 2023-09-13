@@ -49,12 +49,12 @@ git clone https://github.com/BlackTechyGirl/person-Api.git
 ### Configure the database
 Create a mySQL database and update the database configuration in the `application-{profile}.properties` file. The default active profile is "dev"
 ```properties
-SERVER_PORT=
-db.host=
-db.name=
-db.username=
-db.password=
-db.port=
+spring.datasource.url=
+spring.datasource.username=
+spring.datasource.password=
+spring.datasource.driver-class-name=
+spring.jpa.properties.hibernate.dialect=
+
 ```
 
 ### Build and Run the Application
