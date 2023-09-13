@@ -36,9 +36,9 @@ This ia a Java Spring Boot API application to handle CRUD operations for a Perso
 * `Java 8 or higher`
 * `Maven`
 * `mySQL Database`
-* `Port ${SERVER_PORT} open and free`
 
-[![My Skills](https://skillicons.dev/icons?i=java,spring,mysql,postgresql,postman)](https://skillicons.dev)
+
+[![My Skills](https://skillicons.dev/icons?i=java,spring,mysql,postman)](https://skillicons.dev)
 
 # Getting Started
 ### Clone the Repository
