@@ -43,12 +43,10 @@ class PersonControllerTests {
         // Arrange
         PersonRequest request = new PersonRequest();
         request.setName("John");
-        request.setAge(30);
 
         Person person = new Person();
         person.setId(1L);
         person.setName("John");
-        person.setAge(30);
 
         when(personRepository.save(any(Person.class))).thenReturn(person);
 
@@ -67,7 +65,6 @@ class PersonControllerTests {
         Person person = new Person();
         person.setId(personId);
         person.setName("John");
-        person.setAge(30);
 
         when(personRepository.findById(personId)).thenReturn(Optional.of(person));
 
@@ -100,11 +97,10 @@ class PersonControllerTests {
         Person person1 = new Person();
         person1.setId(1L);
         person1.setName("John");
-        person1.setAge(30);
+
         Person person2 = new Person();
         person2.setId(2L);
         person2.setName("Jane");
-        person2.setAge(25);
         persons.add(person1);
         persons.add(person2);
 
@@ -126,12 +122,12 @@ class PersonControllerTests {
         Long personId = 1L;
         PersonRequest request = new PersonRequest();
         request.setName("UpdatedName");
-        request.setAge(35);
+
 
         Person existingPerson = new Person();
         existingPerson.setId(personId);
         existingPerson.setName("John");
-        existingPerson.setAge(30);
+
 
         when(personRepository.findById(personId)).thenReturn(Optional.of(existingPerson));
         when(personRepository.save(any(Person.class))).thenReturn(existingPerson);
@@ -150,7 +146,7 @@ class PersonControllerTests {
         Long nonExistentPersonId = 99L;
         PersonRequest request = new PersonRequest();
         request.setName("UpdatedName");
-        request.setAge(35);
+
 
         when(personRepository.findById(nonExistentPersonId)).thenReturn(Optional.empty());
 
@@ -168,7 +164,7 @@ class PersonControllerTests {
         Person existingPerson = new Person();
         existingPerson.setId(personId);
         existingPerson.setName("John");
-        existingPerson.setAge(30);
+
 
         when(personRepository.findById(personId)).thenReturn(Optional.of(existingPerson));
 
@@ -176,7 +172,7 @@ class PersonControllerTests {
         ResponseEntity<?> responseEntity = personController.deletePerson(personId);
 
         // Assert
-        assertEquals(HttpStatus.NO_CONTENT, responseEntity.getStatusCode());
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
     }
 
     @Test
