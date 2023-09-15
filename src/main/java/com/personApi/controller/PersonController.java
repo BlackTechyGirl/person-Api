@@ -23,7 +23,7 @@ public class PersonController {
         this.personRepository = personRepository;
     }
 
-    @PostMapping
+    @PostMapping("")
     public ResponseEntity<?> createPerson(@RequestBody PersonRequest request) {
         try {
             if (request.getName() == null || request.getName().isEmpty()) {
