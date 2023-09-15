@@ -5,7 +5,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 WORKDIR /app
 
 # Copy the JAR file from your local machine into the container
-COPY target/person-Api.jar /app/app.jar
+COPY target/person-Api-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Expose the port your Spring Boot application will listen on
 EXPOSE 8080
