@@ -1,7 +1,7 @@
-C:\Users\Admin\Desktop\SPRING\spring boot\personApi\src\main\java\com\personApi\controller\PersonController.java
-C:\Users\Admin\Desktop\SPRING\spring boot\personApi\src\main\java\com\personApi\data\dto\PersonRequest.java
-C:\Users\Admin\Desktop\SPRING\spring boot\personApi\src\main\java\com\personApi\exceptions\ValidationException.java
-C:\Users\Admin\Desktop\SPRING\spring boot\personApi\src\main\java\com\personApi\data\model\Person.java
-C:\Users\Admin\Desktop\SPRING\spring boot\personApi\src\main\java\com\personApi\data\repo\PersonRepository.java
-C:\Users\Admin\Desktop\SPRING\spring boot\personApi\src\main\java\com\personApi\data\dto\PersonResponse.java
-C:\Users\Admin\Desktop\SPRING\spring boot\personApi\src\main\java\com\personApi\PersonApiApplication.java
+C:\Users\user\Videos\Warrior Nun\Season 2\BankName\person-Api-2\src\main\java\com\personApi\exceptions\ValidationException.java
+C:\Users\user\Videos\Warrior Nun\Season 2\BankName\person-Api-2\src\main\java\com\personApi\data\dto\PersonResponse.java
+C:\Users\user\Videos\Warrior Nun\Season 2\BankName\person-Api-2\src\main\java\com\personApi\controller\PersonController.java
+C:\Users\user\Videos\Warrior Nun\Season 2\BankName\person-Api-2\src\main\java\com\personApi\PersonApiApplication.java
+C:\Users\user\Videos\Warrior Nun\Season 2\BankName\person-Api-2\src\main\java\com\personApi\data\model\Person.java
+C:\Users\user\Videos\Warrior Nun\Season 2\BankName\person-Api-2\src\main\java\com\personApi\data\dto\PersonRequest.java
+C:\Users\user\Videos\Warrior Nun\Season 2\BankName\person-Api-2\src\main\java\com\personApi\data\repo\PersonRepository.java
